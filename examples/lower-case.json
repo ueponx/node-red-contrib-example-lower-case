@@ -1,0 +1,60 @@
+[
+    {
+        "id": "0f56093dfd355ecd",
+        "type": "lower-case",
+        "z": "9f3f87cd9fa4dda6",
+        "name": "",
+        "x": 370,
+        "y": 420,
+        "wires": [
+            [
+                "790208670acf3d9c"
+            ]
+        ]
+    },
+    {
+        "id": "f04228a8249e8a38",
+        "type": "inject",
+        "z": "9f3f87cd9fa4dda6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello Node-RED!",
+        "payloadType": "str",
+        "x": 160,
+        "y": 420,
+        "wires": [
+            [
+                "0f56093dfd355ecd"
+            ]
+        ]
+    },
+    {
+        "id": "790208670acf3d9c",
+        "type": "debug",
+        "z": "9f3f87cd9fa4dda6",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 420,
+        "wires": []
+    }
+]
